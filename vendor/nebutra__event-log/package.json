@@ -1,0 +1,28 @@
+{
+  "name": "@nebutra/event-log",
+  "version": "0.1.4",
+  "description": "Append-only event log with content-addressed snapshots",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+    "@nebutra/capability-kit": "file:../nebutra__capability-kit",
+    "@nebutra/content-store": "file:../nebutra__content-store",
+    "@nebutra/errors": "file:../nebutra__errors",
+    "@noble/hashes": "2.0.1"
+  },
+  "private": false
+}
