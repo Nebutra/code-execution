@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "types": [
+      "node"
+    ],
+    "incremental": false,
+    "baseUrl": ".",
+    "paths": {
+      "@nebutra/code-execution": [
+        "./src/index.ts"
+      ]
+    },
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "examples"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
